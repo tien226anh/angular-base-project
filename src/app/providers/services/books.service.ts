@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class BooksService {
   constructor(private http: HttpClient) {}
 
-  getBooks() {
+  async getBooks() {
     return this.http
       .get<any>('')
       .toPromise()

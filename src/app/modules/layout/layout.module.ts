@@ -7,6 +7,7 @@ import { CenteredContentLayoutComponent } from '@app/layout/centered-content-lay
 import { MainLayoutComponent } from '@app/layout/main-layout/main-layout.component';
 import { LoginModule } from '../login/login.module';
 import { DashboardModule } from '../dashboard/dashboard.module';
+import { RegisterModule } from '../register/register.module';
 
 @NgModule({
   declarations: [MainLayoutComponent, CenteredContentLayoutComponent],
@@ -16,6 +17,7 @@ import { DashboardModule } from '../dashboard/dashboard.module';
     MaterialModule,
     FlexLayoutModule,
     LoginModule,
+    RegisterModule,
     DashboardModule,
   ],
   exports: [MainLayoutComponent, CenteredContentLayoutComponent],

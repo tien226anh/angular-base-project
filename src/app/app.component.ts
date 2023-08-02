@@ -16,13 +16,20 @@ export class AppComponent implements OnInit {
   Layouts = Layouts;
   layout?: Layouts;
 
+  private centeredLayoutParams: string[] = ['/login', '/register'];
+
   constructor(private router: Router) {}
 
   ngOnInit() {
     this.router.events.subscribe(data => {
       if (data instanceof RoutesRecognized) {
-        this.layout =
-          data.state.root.firstChild?.data['layout'] || Layouts.Main;
+        const url = data.url;
+        if (!this.centeredLayoutParams.includes(url)) {
+          this.layout =
+            data.state.root.firstChild?.data?.['layout'] || Layouts.Main;
+        } else {
+          this.layout = Layouts.centeredContent;
+        }
       }
     });
   }
