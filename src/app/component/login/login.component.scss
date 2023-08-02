@@ -1,0 +1,48 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  .mat-form-field {
+    width: 100%;
+  }
+
+  .mat-card {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .loginButton {
+    width: 100%;
+  }
+
+  .loginButtonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .loginButtonWrapper .mat-raised-button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .loginButtonWrapper .mat-raised-button.mat-primary {
+    margin-left: 10px;
+  }
+
+  .loginButtonWrapper .mat-raised-button.mat-accent {
+    margin-left: 10px;
+  }
+
+  .loginButtonWrapper .mat-raised-button.mat-warn {
+    margin-left: 10px;
+  }
+
+  .loginButtonWrapper .mat-raised-button.mat-button-base {
+    margin-left: 10px;
+  }
+}
