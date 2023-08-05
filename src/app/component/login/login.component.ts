@@ -7,7 +7,9 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  constructor() {}
+  constructor() {
+    return;
+  }
 
   email = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', [

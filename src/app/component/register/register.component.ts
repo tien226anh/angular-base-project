@@ -7,7 +7,9 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  constructor() {}
+  constructor() {
+    return;
+  }
 
   username = new FormControl('', [Validators.required]);
   email = new FormControl('', [Validators.required, Validators.email]);
